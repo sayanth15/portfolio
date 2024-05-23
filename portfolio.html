@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0eeee;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            margin: 20px;
+        }
+
+        nav ul {
+            justify-content: center;
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            list-style: none;
+            margin: 0 30px;
+            color: black;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav ul li a.active {
+            color: black;
+        }
+
+        .left {
+            display: flex;
+            height: 70%;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+        }
+
+        .right {
+            display: flex;
+            height: 40%;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            font-size: 60%;
+        }
+
+        .left ul li {
+            font-size: large;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            height: 100vh;
+            /* Set height to 100% of the viewport height */
+            background-color: #a59494;
+
+            /* Add this line to set the background image */
+            background-size: cover;
+            /* Optional: Adjust the background size */
+            color: rgb(79, 71, 71);
+            /* Optional: Set text color for better visibility on the image */
+            padding: 40px;
+        }
+
+        .leftsection {
+            flex: 1;
+            padding: 20px;
+            color: black;
+            text-align: center;
+            font-size: 3rem;
+            margin: 65px;
+
+        }
+
+
+        .purple {
+            color: red;
+        }
+
+        #element {
+            color: rgb(244, 11, 11);
+        }
+
+        .second-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .about-me {
+            font-size: 1.5rem;
+            margin: 60px;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            /* Optional: Add border-radius for a rounded image */
+        }
+
+        .skills-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .skills-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-section ul {
+            font-size: 1.5rem;
+            margin: 60px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-section li {
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(211, 193, 211);
+            color: white;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: grid;
+            gap: 15px;
+        }
+
+
+
+
+        .contact-section label {
+            font-size: 1rem;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-section button {
+            background-color: #45a049;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            /* #45a049 */
+        }
+
+        .contact-section button:hover {
+            background-color: #51b651;
+        }
+
+        footer {
+            height: 100px;
+            background-color: white;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-first {
+            /* Add any styles for the first section here */
+            display: flex;
+        }
+
+        .footer-second ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer-second li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .footer-third ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer-third li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .footer-fourth {
+            /* Add any styles for the fourth section here */
+            display: flex;
+        }
+
+        .footer-second a,
+        .footer-third a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-second a:hover,
+        .footer-third a:hover {
+            color: rgb(142, 59, 159);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about-me">About-me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hello, My name is <span class="purple">Sayanth</span>
+                <div>I am a passionate student of</div>
+                <span id="element"></span>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Hello there! I'm Sayanth, currently navigating the exciting journey of my third year in ISE at
+                    JSSSTU. Education has always been a cornerstone of my life, and each year brings new challenges and
+                    discoveries.
+                    <br>
+                    In this phase of my academic adventure, I find myself delving deeper into the intricacies of
+                    computer interactions, exploring the nuances that make it both challenging and immensely rewarding.
+                    From tackling complex theories to engaging in hands-on projects, every class adds a layer to my
+                    understanding of the subject.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="h7.jpg" alt="Image">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <p>
+                <ul>Programming Languages:
+                    <li>HTML</li><li>CSS</li><li>Python</li> </ul>
+                <li>Database Management Sysytem</li>
+                <li>languages such as c, c++, ada.</li>
+                <li>knowldge on opereating sysytem,unix,system software <br> and compilers</li>
+                <!-- Add more skills as needed -->
+            </p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['3rd year', 'Information Science',],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sayanth Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <!-- Add social media icons or other additional content here -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
